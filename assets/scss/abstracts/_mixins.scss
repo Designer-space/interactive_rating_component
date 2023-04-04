@@ -1,0 +1,19 @@
+@mixin flex($flex-dir, $align, $justify){
+    display: flex;
+    flex-direction: $flex-dir;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin media($width, $breakpoint){
+    @media ($width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin hover{
+    &:hover,
+    &:focus {
+        @content;
+    }
+}

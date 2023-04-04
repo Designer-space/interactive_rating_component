@@ -1,0 +1,131 @@
+@use '../abstracts' as *;
+
+.card-wrapper{
+    margin: 1.5rem;
+    display: flex;
+
+    .card{
+        background: rgb(35,42,52);
+        background: -moz-radial-gradient(circle, rgba(35,42,52,1) 0%, rgba(25,29,36,1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(35,42,52,1) 0%, rgba(25,29,36,1) 100%);
+        background: radial-gradient(circle, rgba(35,42,52,1) 0%, rgba(25,29,36,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#232a34",endColorstr="#191d24",GradientType=1);
+        max-width: 26rem;
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+    .front{
+
+        &__logo{
+            max-width: fit-content;
+            background-color: #262f38;
+            padding: 1rem;
+            border-radius: 50%;
+            transition: all ease 0.4s;
+        }
+
+        &__title{
+            font-size: clamp(1.4rem, 0.9625rem + 1.4vw, 1.75rem);
+            color: $clr-neutral-100;
+            padding-block: 2.125rem 0.825rem;
+        }
+
+        &__description{
+            font-size: clamp(0.8rem, 0.6281rem + 0.55vw, 0.9375rem);
+            line-height: 1.5rem;
+        }
+
+        &__form{
+            display: block;
+
+            &-btn_radio{
+                @include flex(row, center, space-between);
+                border: none;
+                padding-block: 1.875rem;
+                padding-inline: 0;
+
+                .radio{
+                    display: none;
+
+                    &:checked + label{
+                        background-color:$clr-neutral-200;
+                        color: $clr-neutral-100;
+                        transition: 0.2s ease-in;
+                    }
+                }
+
+
+                .btn{
+                    padding: 0.5rem 1rem;
+                    background-color: #262f38;
+                    border-radius: 50%;
+                    @include flex(column, center, center);
+                    transition: .5s ease-in-out;
+                    cursor: pointer;
+
+                    @include hover{
+                        background-color: $clr-primary-400;
+                        color: $clr-neutral-100;
+                    }
+                }
+            }
+
+            &-btn_submit{
+                
+                .submit{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    color: $clr-neutral-100;
+                    text-transform: uppercase;
+                    background-color: $clr-primary-400;
+                    
+                    cursor: pointer;
+                    width: 100%;
+                    border-radius: 100vh;
+                    border: none;
+                    padding-block: .5rem;
+
+                    @include hover{
+                        background-color: $clr-neutral-100;
+                        color: $clr-primary-400;
+                    }
+                }
+            }
+        }
+
+        @include media(min-width,$custom-I){
+            padding: 2rem;
+
+            .btn{
+                padding: 0.77rem 1.35rem;
+            }
+        }
+    }
+
+    .back{
+        text-align: center;
+        padding: 2.5rem;
+        transition: all ease 0.4s;
+
+        &__image{
+            display: flex;
+            justify-content: center;
+        }
+
+        &__result{
+            font-size: 14px;
+            color: $clr-primary-400;
+            letter-spacing: .5px;
+            background-color: #262f38;
+            padding: .25rem 1.2rem;
+            border-radius: 100vh;
+            margin-block: 2rem;
+        }
+
+        &__text{
+            font-size: 28px;
+            color: $clr-neutral-100;
+            padding-bottom: 1rem;
+        }
+    }
+}

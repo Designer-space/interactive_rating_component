@@ -1,0 +1,27 @@
+// Font-Family 
+$ff-primary: 'Overpass', sans-serif;
+
+// Colors 
+
+// Neutral Colors
+$clr-neutral-100: hsl(0, 0%, 100%);
+$clr-neutral-200: hsl(217, 12%, 63%);
+$clr-neutral-300: hsl(216, 12%, 54%);
+$clr-neutral-600: hsl(213, 19%, 18%);
+$clr-neutral-700: hsl(216, 12%, 8%);
+
+// Primary Colors
+$clr-primary-400: hsl(25, 97%, 53%);
+
+// Transition 
+$transition: 0.3s ease-in-out;
+
+// Responsive Breakpoint 
+
+$Device-S: 375px;
+$Device-M: 615px;
+$Device-L: 906px;
+$Device-XL: 1200px;
+$Device-XXL: 1440px;
+
+$custom-I: 450px;

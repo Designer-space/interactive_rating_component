@@ -1,0 +1,243 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: all ease 0.4s;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.575rem;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 0.755rem;
+  margin-block: 0.5rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: hsl(25, 97%, 53%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  color: hsl(217, 12%, 63%);
+  text-decoration: underline;
+}
+
+@media (min-width: 56.75rem) and (min-height: 43.125rem) {
+  .attribution {
+    position: fixed;
+    bottom: 0;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.hidden {
+  display: none;
+  transition: all ease 0.4s;
+}
+
+.card-wrapper {
+  margin: 1.5rem;
+  display: flex;
+}
+.card-wrapper .card {
+  background: rgb(35, 42, 52);
+  background: radial-gradient(circle, rgb(35, 42, 52) 0%, rgb(25, 29, 36) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#232a34",endColorstr="#191d24",GradientType=1);
+  max-width: 26rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+.card-wrapper .front__logo {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #262f38;
+  padding: 1rem;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+.card-wrapper .front__title {
+  font-size: clamp(1.4rem, 0.9625rem + 1.4vw, 1.75rem);
+  color: hsl(0, 0%, 100%);
+  padding-block: 2.125rem 0.825rem;
+}
+.card-wrapper .front__description {
+  font-size: clamp(0.8rem, 0.6281rem + 0.55vw, 0.9375rem);
+  line-height: 1.5rem;
+}
+.card-wrapper .front__form {
+  display: block;
+}
+.card-wrapper .front__form-btn_radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  padding-block: 1.875rem;
+  padding-inline: 0;
+}
+.card-wrapper .front__form-btn_radio .radio {
+  display: none;
+}
+.card-wrapper .front__form-btn_radio .radio:checked + label {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.2s ease-in;
+}
+.card-wrapper .front__form-btn_radio .btn {
+  padding: 0.5rem 1rem;
+  background-color: #262f38;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.card-wrapper .front__form-btn_radio .btn:hover, .card-wrapper .front__form-btn_radio .btn:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.card-wrapper .front__form-btn_submit .submit {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  width: 100%;
+  border-radius: 100vh;
+  border: none;
+  padding-block: 0.5rem;
+}
+.card-wrapper .front__form-btn_submit .submit:hover, .card-wrapper .front__form-btn_submit .submit:focus {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+@media (min-width: 450px) {
+  .card-wrapper .front {
+    padding: 2rem;
+  }
+  .card-wrapper .front .btn {
+    padding: 0.77rem 1.35rem;
+  }
+}
+.card-wrapper .back {
+  text-align: center;
+  padding: 2.5rem;
+  transition: all ease 0.4s;
+}
+.card-wrapper .back__image {
+  display: flex;
+  justify-content: center;
+}
+.card-wrapper .back__result {
+  font-size: 14px;
+  color: hsl(25, 97%, 53%);
+  letter-spacing: 0.5px;
+  background-color: #262f38;
+  padding: 0.25rem 1.2rem;
+  border-radius: 100vh;
+  margin-block: 2rem;
+}
+.card-wrapper .back__text {
+  font-size: 28px;
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 1rem;
+}/*# sourceMappingURL=main.css.map */
