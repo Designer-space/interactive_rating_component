@@ -141,6 +141,7 @@ body {
   max-width: 26rem;
   padding: 1.5rem;
   border-radius: 2rem;
+  margin-top: 1.3rem;
 }
 .card-wrapper .front__logo {
   max-width: -moz-fit-content;
