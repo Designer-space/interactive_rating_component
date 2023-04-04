@@ -23,11 +23,11 @@
 
 ![](./design/desktop-preview.jpg)
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [3-Column Card Component (SASS + Flexbox + BEM) | Frontend Mentor]()
+- Solution URL: [interactive rating Component (SASS + Flexbox + BEM) | Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI/hub)
 - Live Site URL: [https://designer-space.github.io/interactive_rating_component/](https://designer-space.github.io/interactive_rating_component/)
 
 <br>
