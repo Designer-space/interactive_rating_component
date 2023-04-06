@@ -205,7 +205,7 @@ body {
   width: 100%;
   border-radius: 100vh;
   border: none;
-  padding-block: 0.7rem;
+  padding-block: 0.6rem;
 }
 .card-wrapper .front__form-btn_submit .submit:hover, .card-wrapper .front__form-btn_submit .submit:focus {
   background-color: hsl(0, 0%, 100%);
