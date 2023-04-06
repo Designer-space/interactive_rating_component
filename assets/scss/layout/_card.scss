@@ -13,7 +13,7 @@
         max-width: 26rem;
         padding: 1.5rem;
         border-radius: 2rem;
-        margin-top: 1.3rem;
+        margin-top: 3.3rem;
     }
     .front{
 
@@ -84,7 +84,7 @@
                     width: 100%;
                     border-radius: 100vh;
                     border: none;
-                    padding-block: .5rem;
+                    padding-block: .7rem;
 
                     @include hover{
                         background-color: $clr-neutral-100;
